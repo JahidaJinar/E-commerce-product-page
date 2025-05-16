@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sneaker Company</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <button class="mobile-menu-btn">
+          <img src="./images/icon-menu.svg" alt="Menu" />
+        </button>
+        <div class="logo">sneakers</div>
+        <nav class="desktop-nav">
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </nav>
+      </div>
+      <div class="header-right">
+        <button class="cart-btn">
+          <img src="./images/icon-cart.svg" alt="Cart" />
+          <span class="cart-count">0</span>
+        </button>
+        <img class="avatar" src="./images/image-avatar.png" alt="Avatar" />
+      </div>
+    </header>
+
+    <nav class="mobile-nav">
+      <button class="close-menu-btn">
+        <img src="./images/icon-close.svg" alt="Close" />
+      </button>
+      <a href="#">Collections</a>
+      <a href="#">Men</a>
+      <a href="#">Women</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <main class="product-container">
+      <section class="product-images">
+        <div class="main-image">
+          <img src="./images/image-product-1.jpg" alt="Sneakers" />
+        </div>
+        <div class="thumbnails">
+          <img src="./images/image-product-1-thumbnail.jpg" alt="Thumbnail" />
+          <img src="./images/image-product-2-thumbnail.jpg" alt="Thumbnail" />
+          <img src="./images/image-product-3-thumbnail.jpg" alt="Thumbnail" />
+          <img src="./images/image-product-4-thumbnail.jpg" alt="Thumbnail" />
+        </div>
+      </section>
+
+      <!-- Lightbox Structure -->
+      <div class="lightbox">
+        <div class="lightbox-content">
+          <button class="close-lightbox">&times;</button>
+          <button class="carousel-prev">&lt;</button>
+          <button class="carousel-next">&gt;</button>
+          <img src="" alt="Product image" class="lightbox-main-image" />
+          <div class="lightbox-thumbnails"></div>
+        </div>
+      </div>
+
+      <section class="product-info">
+        <br /><br />
+        <h3 class="company-name">SNEAKER COMPANY</h3>
+        <br /><br />
+        <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+        <br /><br />
+        <p class="product-description">
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer.
+        </p>
+
+        <div class="price-container">
+          <span class="current-price">$125.00</span>
+          <span class="discount">50%</span>
+        </div>
+        <div>
+          <span class="original-price"><b>$250.00</b></span>
+        </div>
+        <br /><br />
+        <div class="quantity-controls">
+          <div class="quantity-selector">
+            <button class="quantity-btn minus">-</button>
+            <span class="quantity">0</span>
+            <button class="quantity-btn plus">+</button>
+          </div>
+          <button class="add-to-cart">
+            <img src="./images/icon-cart.svg" alt="Cart" />
+            Add to cart
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <div class="cart-modal">
+      <h3>Cart</h3>
+      <div class="cart-content">
+        <div class="empty">Your cart is empty</div>
+        <div class="items"></div>
+        <button class="checkout">Checkout</button>
+      </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
